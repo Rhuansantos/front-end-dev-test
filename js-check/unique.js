@@ -1,4 +1,3 @@
-//
 // Make Unique
 // Finish the rest of 'unique()' function to remove all
 // duplicate entries from a given array and satisfy the test
@@ -14,8 +13,28 @@
 // [{foo: 'bar'}, {foo: 'bar'}] => [{foo: 'bar'}]
 
 const unique = (arr) => {
-  // Add your code here.
-}
+    // Initial dataset with duplicated values
+    var arrList = ['All', 'All', {the: 'things'}, [4], 0, [4]];
+
+    // Empty Array that will be populated with de-duplicated values
+    var cleanList = [];
+
+    // Define removeDuplicate function
+    function removeDuplicates(items) {
+        // loop through list
+        for(var i=0;i<items.length;i++) {
+            // if item doesn't already exist in cleanList then push it
+            var check = cleanList.indexOf(items[i]);
+
+            if(check === -1) {
+                cleanList.push(items[i]);
+            }
+
+        }
+    }
+
+    removeDuplicates(arrList);
+};
 
 module.exports = unique
 // Note: It's not neccessary to have all code into the 'unique'
