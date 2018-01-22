@@ -359,7 +359,7 @@ table {
 .banner {
   width: 100%;
   height: 379px;
-  background-image: url("../../img/home/main-banner.jpg");
+  background-image: url("../img/home/main-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

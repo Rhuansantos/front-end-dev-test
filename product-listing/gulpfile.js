@@ -23,7 +23,7 @@ gulp.task('serve', () => {
 });
 
 gulp.task('build', function() {
-  return gulp.src(['src/**/*']).pipe(minify({
+  return gulp.src(['src/**']).pipe(minify({
     minify: true,
     collapseWhitespace: true,
     conservativeCollapse: true,
